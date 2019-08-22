@@ -14,7 +14,7 @@ pandoc ../README.md -o source/README.rst
 make html
 
 cd ../..
-git clone -b gh-pages "https://github.com/$ORG/$REPO.git" gh-pages
+git clone -b gh-pages "https://$GH_TOKEN@github.com/$ORG/$REPO.git" gh-pages
 cd gh-pages
 
 git config user.name "Travis Builder"
