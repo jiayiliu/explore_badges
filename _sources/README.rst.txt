@@ -36,7 +36,12 @@ Sphinx-doc for gh-pages
    `here <https://gist.github.com/brenns10/f48e1021e8befd2221a2>`__
 
    a. put ORG,REPO,EMAIL var in travis-ci repo setting
-   b. add publish.sh
+   b. create a token from github, follow the
+      `instructions <https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line>`__
+   c. run travis encrypt GH\_TOKEN=xxxx --add;
+   d. edit publish.sh
+
+3. commit and push
 
 .. |Build Status| image:: https://travis-ci.org/jiayiliu/explore_badges.svg?branch=master
    :target: https://travis-ci.org/jiayiliu/explore_badges

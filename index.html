@@ -66,9 +66,13 @@ failing error if it fails.</p>
 <a class="reference external" href="https://gist.github.com/brenns10/f48e1021e8befd2221a2">here</a></p>
 <ol class="loweralpha simple">
 <li><p>put ORG,REPO,EMAIL var in travis-ci repo setting</p></li>
-<li><p>add publish.sh</p></li>
+<li><p>create a token from github, follow the
+<a class="reference external" href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line">instructions</a></p></li>
+<li><p>run travis encrypt GH_TOKEN=xxxx –add;</p></li>
+<li><p>edit publish.sh</p></li>
 </ol>
 </li>
+<li><p>commit and push</p></li>
 </ol>
 <div class="toctree-wrapper compound">
 </div>
