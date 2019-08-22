@@ -9,6 +9,9 @@ if [ $flag == "False" ]; then
   exit 0
 fi
 
+
+COMMIT=$(git show --format="%h" --no-patch)
+
 cd docs
 pandoc ../README.md -o source/README.rst
 make html
@@ -20,6 +23,7 @@ cd gh-pages
 
 git config user.name "Travis Builder"
 git config user.email "$EMAIL"
+
 
 cp ../$REPO/README.md .
 cp -R ../$REPO/docs/build/html/* ./
