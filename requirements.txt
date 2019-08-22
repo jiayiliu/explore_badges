@@ -1,3 +1,6 @@
 # python dependencies
 pytest-cov # for code coverage using pytest
 codecov # for code coverage with codecov
+
+Sphinx
+recommonmark # markdown for sphinx

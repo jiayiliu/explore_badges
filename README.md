@@ -1,7 +1,6 @@
 # Explore of Badges
 
 [![Build Status](https://travis-ci.org/jiayiliu/explore_badges.svg?branch=master)](https://travis-ci.org/jiayiliu/explore_badges)
-
 [![codecov](https://codecov.io/gh/jiayiliu/explore_badges/branch/master/graph/badge.svg)](https://codecov.io/gh/jiayiliu/explore_badges)
 
 ## Python package
@@ -21,4 +20,7 @@ Here is a simple [tutorial](https://docs.python-guide.org/writing/structure/).
 
 Note: because `codecov` is in `after_success`, it won't give a failing error if it fails.
 
-## sphinx-doc
+## Sphinx-doc for gh-pages
+
+1. Makesure sphinx generate doc you want
+2. Follow instructions [here](https://gist.github.com/brenns10/f48e1021e8befd2221a2)
