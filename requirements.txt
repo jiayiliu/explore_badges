@@ -1,2 +1,2 @@
 # python dependencies
-coverage # for code coverage
+pytest-cov # for code coverage using pytest
