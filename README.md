@@ -1,5 +1,9 @@
 # Explore of Badges
 
+[![Build Status](https://travis-ci.org/jiayiliu/explore_badges.svg?branch=master)](https://travis-ci.org/jiayiliu/explore_badges)
+
+[![codecov](https://codecov.io/gh/jiayiliu/explore_badges/branch/master/graph/badge.svg)](https://codecov.io/gh/jiayiliu/explore_badges)
+
 ## Python package
 
 Here is a simple [tutorial](https://docs.python-guide.org/writing/structure/).
