@@ -20,7 +20,7 @@ cd gh-pages
 git config user.name "Travis Builder"
 git config user.email "$EMAIL"
 
-cp -R ../$REPO/docs/build/html* ./
+cp -R ../$REPO/docs/build/html/* ./
 git add -A .
 git commit -m "[ci skip] Autodoc commit for $COMMIT."
 git push -q origin gh-pages
