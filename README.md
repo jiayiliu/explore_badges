@@ -22,5 +22,8 @@ Note: because `codecov` is in `after_success`, it won't give a failing error if 
 
 ## Sphinx-doc for gh-pages
 
-1. Makesure sphinx generate doc you want
+1. Make sure sphinx generate doc you want
 2. Follow instructions [here](https://gist.github.com/brenns10/f48e1021e8befd2221a2)
+
+    a. put ORG,REPO,EMAIL var in travis-ci repo setting
+    b. add publish.sh
