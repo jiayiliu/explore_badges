@@ -14,3 +14,4 @@ script:
 after_success:
   - if [[ $TRAVIS_PYTHON_VERSION == 3.7 ]]; then codecov; fi
   - ./publish.sh
+secure: "wN/4rlnlknFItZcfpHMbpjNwi3hMZQNv/gDNuyGKbZvxKtVueQGPzgaa55GhEGsJ/elQVEzTN6urwPbbBW5FPaTxIpZWobUNvK2NUuf44d4JWghoXWvekU0Y8xkJlWW4n84Y0mjkC4QURB6SB9Q5IDpUjBJq6Hr90nYCZyKiHGzVb3gcIKDWWSZ2Ckno7/Nb2rZtyE7uOtWLsEyABZp6+alHQCSkWBe2YTYLZChuJXiz8H7wnLnWvXHDc7SxB2vgaq+EdjsLD+CSzEmGYYw5dXYSbxTjSCkMsqNNddcjkGrr+d3ARkHgGfG4akpGhPk4Mx6yhoLu0cJtPXjY4sG9WZ/7BqNJ7g/atLLFOQpCUG1weimC6+fhIVuCSOBA9Cx/l+1io/GdSK/8/JzowflXvNsViPigGrhkHkjflGX1XVGElU80TafINLRUy59Bed4TuuBI1YUW5HWumpoKM/QPCoAKk2wOl/UzIQjT3ldyXKjeP2jfM/nhB9qRENFj6BUujJoCxZ2hIZuScbzuiYAPGomOUBccNVrWa/FqG75DNLW6GNomVp0/ckIkgUgXFueLCwO2jsa+u9+18GFR1B/2YZuv+cOTTwo8FqbYQbY7oJWfpRhqG+msrHxdpYtBDEd5fuUzCqw99uOtUVc0efedGCsCx7qWa8N8jJ/4K+aUfmY="
