@@ -15,5 +15,6 @@ Here is a simple [tutorial](https://docs.python-guide.org/writing/structure/).
 
 ## CodeCov
 
-1. Install [CodeCov](https://github.com/marketplace/codecov).  It is free for open-source repository.
-2. 
+1. From Github.com install [CodeCov](https://github.com/marketplace/codecov).  It is free for open-source repository.
+2. Add the repo in codecov.
+3. update `.travis.yml`
