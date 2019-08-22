@@ -1,4 +1,4 @@
-sudo: false # based on codecov to speed up the build, https://github.com/codecov/example-python/blob/master/.travis.yml
+# sudo: false # based on codecov to speed up the build, https://github.com/codecov/example-python/blob/master/.travis.yml
 
 language: python
 python:
@@ -7,6 +7,7 @@ python:
 install:
   - pip install -r requirements.txt
   - python setup.py install
+  - sudo apt-get install pandoc
 script:
   - pytest --cov ebadge/ tests
 after_success:
