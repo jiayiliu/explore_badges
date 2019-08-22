@@ -1,17 +1,17 @@
-# sudo: false # based on codecov to speed up the build, https://github.com/codecov/example-python/blob/master/.travis.yml
-
 language: python
 python:
-  - "2.7"
-  - "3.6"
-  - "3.7"
+- '2.7'
+- '3.6'
+- '3.7'
 install:
-  - pip install -r requirements.txt
-  - python setup.py install
-  - sudo apt-get install pandoc
+- pip install -r requirements.txt
+- python setup.py install
+- sudo apt-get install pandoc
 script:
-  - pytest --cov ebadge/ tests
+- pytest --cov ebadge/ tests
 after_success:
-  - if [[ $TRAVIS_PYTHON_VERSION == 3.7 ]]; then codecov; fi
-  - ./publish.sh
-secure: "wN/4rlnlknFItZcfpHMbpjNwi3hMZQNv/gDNuyGKbZvxKtVueQGPzgaa55GhEGsJ/elQVEzTN6urwPbbBW5FPaTxIpZWobUNvK2NUuf44d4JWghoXWvekU0Y8xkJlWW4n84Y0mjkC4QURB6SB9Q5IDpUjBJq6Hr90nYCZyKiHGzVb3gcIKDWWSZ2Ckno7/Nb2rZtyE7uOtWLsEyABZp6+alHQCSkWBe2YTYLZChuJXiz8H7wnLnWvXHDc7SxB2vgaq+EdjsLD+CSzEmGYYw5dXYSbxTjSCkMsqNNddcjkGrr+d3ARkHgGfG4akpGhPk4Mx6yhoLu0cJtPXjY4sG9WZ/7BqNJ7g/atLLFOQpCUG1weimC6+fhIVuCSOBA9Cx/l+1io/GdSK/8/JzowflXvNsViPigGrhkHkjflGX1XVGElU80TafINLRUy59Bed4TuuBI1YUW5HWumpoKM/QPCoAKk2wOl/UzIQjT3ldyXKjeP2jfM/nhB9qRENFj6BUujJoCxZ2hIZuScbzuiYAPGomOUBccNVrWa/FqG75DNLW6GNomVp0/ckIkgUgXFueLCwO2jsa+u9+18GFR1B/2YZuv+cOTTwo8FqbYQbY7oJWfpRhqG+msrHxdpYtBDEd5fuUzCqw99uOtUVc0efedGCsCx7qWa8N8jJ/4K+aUfmY="
+- if [[ $TRAVIS_PYTHON_VERSION == 3.7 ]]; then codecov; fi
+- "./publish.sh"
+env:
+  global:
+    secure: bLwlifBXpeWhvwne1mvRFbyJoodOeb6x3TJxqlHbdDjOzUj6SZOiMznj906cqavse8z9WxwEzcKFAnoTBn04LVc2e6JEa5oXKyN3VzZaO9lHniFBrKF6JxbNRm6jUMZXxmCLrHm8XZXxLeFLgoH+LGhmMhJW2Ce9vhTYumvpWityCQ5fabsZvoytGpFSJQ8THbUfL3654LuxaziEFB0M2LA1inIqx4Yx3ENfCsxoB6RNveA0eG7SdF2hywnF97pU8VgkmATOzpeUvw8a91c/pjezPea6g2MSTtnD6/qYMZ2EPzyeLjOvN179PgsRBI9/s9TLKYrUiB1Rqo+b49hyoIXC7wMwVRAsAghnwY1kduzRWqm/8IJTQ1C+SNQ9/WkptEooc2MpGbWhxW2XjB5eZv4s4vtezJs0+bL2V0ITUGM5Nzn1vImysBZWR8Tr+DZwN1ipDo+lieD4K/1vM0jOYx4RouAnQRyrq7v5IU7ClPod6D02uO7SyK2UWwXPesov81yWEYdC2kwYIKOLKu4Sdbu3k4E2qlmFAYO14TZ7CgPeBulVN7d+z1vQvozzYZd1NIYcZ535FS0LUwl41JPfvniHwBalTrnJYw5zjjv7mZF6PuORmkrDG+lqz0eOJGnyw5+d+PBYXMLiifysGrohFUS79iZw+LZJPg+HAIGDPqU=
