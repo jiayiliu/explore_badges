@@ -17,9 +17,11 @@ cd ../..
 git clone -b gh-pages "https://$GH_TOKEN@github.com/$ORG/$REPO.git" gh-pages
 cd gh-pages
 
+
 git config user.name "Travis Builder"
 git config user.email "$EMAIL"
 
+cp ../$REPO/README.md .
 cp -R ../$REPO/docs/build/html/* ./
 git add -A .
 git commit -m "[ci skip] Autodoc commit for $COMMIT."

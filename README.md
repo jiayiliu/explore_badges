@@ -26,4 +26,8 @@ Note: because `codecov` is in `after_success`, it won't give a failing error if 
 2. Follow instructions [here](https://gist.github.com/brenns10/f48e1021e8befd2221a2)
 
     a. put ORG,REPO,EMAIL var in travis-ci repo setting
-    b. add publish.sh
+    b. create a token from github, follow the [instructions](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) 
+    c. run travis encrypt GH_TOKEN=xxxx --add;
+    d. edit publish.sh
+
+3. commit and push
