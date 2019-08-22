@@ -10,7 +10,7 @@ class EBadge:
         """
         return 1
 
-    def funcB(self):
+    def funcB(self): # pragma: no cover
         """return a
         
         Returns:

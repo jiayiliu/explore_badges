@@ -18,3 +18,7 @@ Here is a simple [tutorial](https://docs.python-guide.org/writing/structure/).
 1. From Github.com install [CodeCov](https://github.com/marketplace/codecov).  It is free for open-source repository.
 2. Add the repo in codecov.
 3. update `.travis.yml`
+
+Note: because `codecov` is in `after_success`, it won't give a failing error if it fails.
+
+## sphinx-doc
