@@ -32,12 +32,8 @@
             
   <div class="section" id="explore-of-badges">
 <h1>Explore of Badges<a class="headerlink" href="#explore-of-badges" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://travis-ci.org/jiayiliu/explore_badges"><img alt="Build Status" src="https://travis-ci.org/jiayiliu/explore_badges.svg?branch=master" /></a> <a class="reference external" href="https://codecov.io/gh/jiayiliu/explore_badges"><img alt="codecov" src="https://codecov.io/gh/jiayiliu/explore_badges/branch/master/graph/badge.svg" /></a></p>
-<div class="section" id="python-package">
-<h2>Python package<a class="headerlink" href="#python-package" title="Permalink to this headline">¶</a></h2>
-<p>Here is a simple
-<a class="reference external" href="https://docs.python-guide.org/writing/structure/">tutorial</a>.</p>
-</div>
+<p>Explore different badges on GitHub</p>
+<p><a class="reference external" href="https://travis-ci.org/jiayiliu/explore_badges"><img alt="Build Status" src="https://travis-ci.org/jiayiliu/explore_badges.svg?branch=master" /></a> <a class="reference external" href="https://codecov.io/gh/jiayiliu/explore_badges"><img alt="codecov" src="https://codecov.io/gh/jiayiliu/explore_badges/branch/master/graph/badge.svg" /></a> <a class="reference external" href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a></p>
 <div class="section" id="travis-ci">
 <h2>Travis-ci<a class="headerlink" href="#travis-ci" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
@@ -58,22 +54,37 @@ open-source repository.</p></li>
 <p>Note: because <code class="docutils literal notranslate"><span class="pre">codecov</span></code> is in <code class="docutils literal notranslate"><span class="pre">after_success</span></code>, it won’t give a
 failing error if it fails.</p>
 </div>
+<div class="section" id="badge-for-license">
+<h2>Badge for License<a class="headerlink" href="#badge-for-license" title="Permalink to this headline">¶</a></h2>
+<p>Find the badge from
+<a class="reference external" href="https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba">here</a></p>
+</div>
+<div class="section" id="ci">
+<h2>CI<a class="headerlink" href="#ci" title="Permalink to this headline">¶</a></h2>
+<p>Python package is used as an example.</p>
+<div class="section" id="python-package">
+<h3>Python package<a class="headerlink" href="#python-package" title="Permalink to this headline">¶</a></h3>
+<p>Here is a simple
+<a class="reference external" href="https://docs.python-guide.org/writing/structure/">tutorial</a>.</p>
+</div>
 <div class="section" id="sphinx-doc-for-gh-pages">
-<h2>Sphinx-doc for gh-pages<a class="headerlink" href="#sphinx-doc-for-gh-pages" title="Permalink to this headline">¶</a></h2>
+<h3>Sphinx-doc for gh-pages<a class="headerlink" href="#sphinx-doc-for-gh-pages" title="Permalink to this headline">¶</a></h3>
+<p>To add python package document into github page, steps are:</p>
 <ol class="arabic simple">
 <li><p>Make sure sphinx generate doc you want</p></li>
 <li><p>Follow instructions
 <a class="reference external" href="https://gist.github.com/brenns10/f48e1021e8befd2221a2">here</a></p>
 <ol class="loweralpha simple">
-<li><p>put ORG,REPO,EMAIL var in travis-ci repo setting</p></li>
+<li><p>put ORG,REPO,EMAIL var in travis-ci repo setting;</p></li>
 <li><p>create a token from github, follow the
-<a class="reference external" href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line">instructions</a></p></li>
-<li><p>run travis encrypt GH_TOKEN=xxxx –add;</p></li>
-<li><p>edit publish.sh</p></li>
+<a class="reference external" href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line">instructions</a>;</p></li>
+<li><p>run <code class="docutils literal notranslate"><span class="pre">travis</span> <span class="pre">encrypt</span> <span class="pre">GH_TOKEN=xxxx</span> <span class="pre">--add</span></code>;</p></li>
+<li><p>modify <code class="docutils literal notranslate"><span class="pre">publish.sh</span></code>.</p></li>
 </ol>
 </li>
 <li><p>commit and push</p></li>
 </ol>
+</div>
 </div>
 </div>
 
